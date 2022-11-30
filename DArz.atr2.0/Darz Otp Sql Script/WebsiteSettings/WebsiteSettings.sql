@@ -1,0 +1,15 @@
+--CREATE TABLE WebsiteSettings
+--(
+--	Id TINYINT IDENTITY(1,1),
+--	IsTestNet BIT NOT NULL,
+--	[ShutDown]  BIT NOT NULL,
+--	rowguid UNIQUEIDENTIFIER NOT NULL,
+--	ModifiedDate DATETIME NOT NULL,
+--	ShutDownMessage NVARCHAR,
+--	DisableType1Ad BIT DEFAULT 0,
+--	DisableDate NVARCHAR,
+--	DisableType1AdStart  DATETIME,
+--	DisableType1AdEnd DATETIME
+
+--	CONSTRAINT PK_WebsiteSettings PRIMARY KEY (Id)
+--)

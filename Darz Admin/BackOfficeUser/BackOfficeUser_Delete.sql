@@ -1,0 +1,14 @@
+ALTER PROCEDURE BackOfficeUser_Delete
+	@UserId UNIQUEIDENTIFIER = ''
+AS
+BEGIN
+	SET TRANSACTION ISOLATION LEVEL SNAPSHOT
+
+	UPDATE BackOfficeUser 
+	SET
+		IsDeleted  = 1
+	WHERE 
+		UserId = @UserId 
+END
+
+

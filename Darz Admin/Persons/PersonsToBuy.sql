@@ -1,0 +1,20 @@
+CREATE TABLE PersonsToBuy
+(
+	Id INT IDENTITY(1,1),
+	PersonId INT,
+	Deal INT,
+	ArtistId INT,
+	BudgetPrice INT,
+	Mediums NVARCHAR(MAX),
+	Colors NVARCHAR(MAX),
+	Styles NVARCHAR(MAX),
+	Category INT,
+	SizeUnit INT,
+	Height INT,
+	Width INT,
+	Depth INT,
+	Length INT,
+	CreationDate DATETIME NOT NULL,
+	ModifiedDate DATETIME NOT NULL,
+	CONSTRAINT PK_PersonsToBuy PRIMARY KEY (Id),
+)

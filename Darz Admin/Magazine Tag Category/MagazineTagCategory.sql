@@ -1,0 +1,8 @@
+CREATE TABLE MagazineTagCategory
+(
+	Id INT IDENTITY(1,1),
+	Name NVARCHAR(50),
+	NameFa NVARCHAR(50) NOT NULL,
+	CreationDate DATETIME,
+	CONSTRAINT PK_MagazineTagCategory PRIMARY KEY (Id)
+)

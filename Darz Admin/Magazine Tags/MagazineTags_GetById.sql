@@ -1,0 +1,11 @@
+ALTER PROCEDURE [dbo].[MagazineTags_GetById]
+	@Id INT = 0
+AS
+BEGIN
+	SET TRANSACTION ISOLATION LEVEL SNAPSHOT;
+
+	SELECT * 
+	FROM MagazineTags WITH(nolock)
+	WHERE (ISNULL(@Id,0) = 0 OR (Id = @Id))
+	ORDER BY CreationDate DESC
+END

@@ -1,0 +1,14 @@
+--CREATE TABLE MagazineTags
+--(
+--	Id INT IDENTITY(1,1),
+--	TagCategoryId INT NOT NULL,
+--	Name NVARCHAR(50),
+--	NameFa NVARCHAR(50) NOT NULL,
+--	CreationDate DATETIME NOT NULL,
+--	CONSTRAINT PK_MagazineTags PRIMARY KEY (Id),
+--	CONSTRAINT FK_MagazineTags_MagazineTagCategory FOREIGN KEY (TagCategoryId)
+--    REFERENCES MagazineTagCategory(Id)
+--)
+
+--ALTER TABLE MagazineTags
+--ADD Description NVARCHAR(MAX)

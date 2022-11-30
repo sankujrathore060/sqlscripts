@@ -1,0 +1,12 @@
+ALTER PROCEDURE [dbo].[MagazineTags_Delete]
+	@Id INT
+AS
+BEGIN
+	SET TRANSACTION ISOLATION LEVEL SNAPSHOT;
+
+	DELETE FROM MagazineSelectedTags
+	WHERE MagazineTagId = @Id
+
+	DELETE FROM MagazineTags
+	WHERE Id = @Id
+END

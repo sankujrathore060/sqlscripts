@@ -1,0 +1,34 @@
+Work Text:-
+-----------
+1) WebsiteSettings :-
+   -------------------
+   - Created  Table WebsiteSettings.
+   - Sp Created:-
+		- WebsiteSettings_Insert
+		- WebsiteSettings_Delete
+		- WebsiteSettings_Update
+		- WebsiteSettings_GetAll
+		
+2) QueuedSMSOTP:-
+   ----------------
+   - Created  Table QueuedSMSOTP.
+   - Sp Created:-
+		- QueuedSMSOTP_Delete
+		- QueuedSMSOTP_Update
+		- QueuedSMSOTP_GetById
+		- QueuedSMSOTP_GetAll
+		- QueuedSMSOTP_GetByCellNumber
+		- QueuedSMSOTP_ValidateOTP
+		- QueuedSMSOTP_Insert
+		- QueuedSMSOTP_SentToday_User
+		
+3) ApplicationUser:-
+	- Sp Cerated
+		- User_FindUserWithCellNumber
+		- User_CheckCellNumberExists
+		- ApplicationUser_Create
+		
+4) Make Change In Artist Overview For Verified Artist 
+	- Sp Created
+		- GetAllUserLogOrGetuserLogByUserId
+		

@@ -1,0 +1,9 @@
+CREATE PROCEDURE [dbo].[MagazineRelatedPosts_DeleteById]
+	@Id INT = 0
+AS
+BEGIN
+	SET TRANSACTION ISOLATION LEVEL SNAPSHOT;
+	
+	DELETE FROM MagazineRelatedPosts
+	WHERE (ISNULL(@Id,0) = 0 OR (Id = @Id))
+END

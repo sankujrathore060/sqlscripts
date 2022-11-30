@@ -1,0 +1,8 @@
+ALTER PROCEDURE BackOfficeUser_GetAll
+AS 
+BEGIN
+	SET TRANSACTION ISOLATION LEVEL SNAPSHOT
+	
+	SELECT UserId, Email, PhoneNumber, PasswordHash, UserName FROM BackOfficeUser WITH(NOLOCK)
+	WHERE IsDeleted IS NULL OR IsDeleted = 0 ORDER BY CreateDate DESC
+END

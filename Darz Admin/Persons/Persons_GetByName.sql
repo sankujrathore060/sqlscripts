@@ -1,0 +1,11 @@
+CREATE PROCEDURE [dbo].[Persons_GetByName]
+	@Name NVARCHAR(100) = ''
+AS
+BEGIN
+	SET TRANSACTION ISOLATION LEVEL SNAPSHOT;
+
+	SELECT * 
+	FROM Persons WITH(nolock)
+	WHERE (ISNULL(@Name,'') = '' OR (Name = @Name))
+	ORDER BY CreationDate DESC
+END

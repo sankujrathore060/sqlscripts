@@ -1,0 +1,2 @@
+ALTER TABLE Gallery
+ADD AddressStatus INT DEFAULT 0

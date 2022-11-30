@@ -1,0 +1,7 @@
+CREATE PROCEDURE ArtistSeries_GetById
+	@Id INT = 0
+AS 
+BEGIN
+	SELECT * FROM ArtistSeries WITH(NOLOCK)
+	WHERE Id = @Id
+END

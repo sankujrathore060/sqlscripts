@@ -1,0 +1,1 @@
+UPDATE Clients.MarketingUser SET IsDeleted = 0

@@ -1,0 +1,1 @@
+sp_Helptext InsertUpdateAuctionHouse

@@ -1,0 +1,10 @@
+ALTER PROCEDURE [dbo].[MagazineCategory_GetById]
+	@Id INT = 0
+AS
+BEGIN
+	SET NOCOUNT ON 
+	SET TRANSACTION ISOLATION LEVEL SNAPSHOT;
+	SELECT * 
+	FROM MagazineCategory WITH(nolock)
+	WHERE Id = @Id 
+END
